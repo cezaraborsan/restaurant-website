@@ -1,0 +1,104 @@
+/* Menu Page and Tabs styles */
+
+.menu-page {
+  background-image: url("../public/menu-page-bg-2.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+.menu-page-content {
+  max-width: 1080px;
+  margin: 2rem auto 4rem;
+}
+
+.menu-page-title {
+  text-align: center;
+  max-width: 100%;
+  background-image: url("../public/bg-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  padding: 2.7rem;
+}
+
+.tabs {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.tab {
+  font-family: "HIROMISAKE", sans-serif;
+  color: #333f72;
+  border: none;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  font-size: 28px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-width: 6px 0;
+  border-color: #e56e0c;
+  border-style: double;
+}
+
+.food-category {
+  margin: 2rem 0 0.5rem;
+  color: #e56e0c;
+}
+
+.food-menu {
+  border: 1px solid rgba(51, 63, 114, 0.5);
+  padding: 2.5rem;
+}
+
+.food-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.food-item-title {
+  font-size: 1.1rem;
+}
+
+.food-item-description {
+  display: block;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: -5px;
+}
+
+.food-item-price {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-page {
+    background-image: none;
+  }
+
+  .tab {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tab {
+    padding: 1rem 1.5rem;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tab {
+    padding: 1rem;
+
+    font-size: 18px;
+  }
+}

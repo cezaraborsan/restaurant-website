@@ -1,0 +1,120 @@
+/* About Page  styles */
+
+.about-page {
+  background-image: url("../public/noodles-bg.svg");
+}
+
+.about-page-title,
+.contact-title {
+  text-align: center;
+  max-width: 100%;
+  background-image: url("../public/bg-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  padding: 2.7rem;
+  margin-bottom: 3rem;
+}
+
+.about-content,
+.contact-content {
+  max-width: 850px;
+  margin: 0rem auto;
+}
+
+.about-page section {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background-color: #f3ede1;
+}
+
+.about-page section:last-child {
+  padding-bottom: 4rem;
+}
+
+.about-subtitle {
+  margin: 0 auto;
+}
+
+.about-subtitle,
+.contact-subtitle {
+  position: relative;
+  width: fit-content;
+}
+
+.about-subtitle::before,
+.about-subtitle::after,
+.contact-subtitle::before,
+.contact-subtitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #e56e0c;
+  border-radius: 50%;
+}
+
+.about-subtitle::before,
+.contact-subtitle::before {
+  left: -30px;
+}
+
+.about-subtitle::after,
+.contact-subtitle::after {
+  right: -30px;
+}
+
+.about-paragraph {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.japanese-cuisine-section p {
+  padding-bottom: 1.5rem;
+}
+
+/* Contact Page styles */
+
+.contact-page {
+  background-image: url("../public/contact-bg-2.svg"),
+    url("../public/contact-bg-3.svg");
+  background-position: bottom right, 5%;
+  background-repeat: no-repeat;
+  background-size: 350px, 120px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page span {
+  font-weight: bold;
+}
+
+.contact-paragraph {
+  max-width: 500px;
+  padding-bottom: 1rem;
+}
+
+.opening-hours-section {
+  align-self: flex-end;
+}
+
+.contact-page section {
+  margin-bottom: 4.5rem;
+}
+
+.contact-page .main-button-container {
+  align-self: center;
+  margin: 2rem 0 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-page {
+    background-size: 150px, 110px;
+    padding-inline: 2rem;
+  }
+}
