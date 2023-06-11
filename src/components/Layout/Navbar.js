@@ -35,7 +35,9 @@ function Navbar() {
   return (
     <>
       <nav>
-        <div className="navbar-logo">MIYABI HOUSE</div>
+        <Link to="/" className="navbar-logo">
+          MIYABI HOUSE
+        </Link>
         <div className="navbar-links-list">
           <Link to="/" className="navbar-link">
             Home

@@ -59,6 +59,7 @@ function AboutPage() {
               hoverBgColor="#f3ede1"
               hoverColor="#e56e0c"
               className="about-btn"
+              path="/menu"
             />
           </section>
         </div>

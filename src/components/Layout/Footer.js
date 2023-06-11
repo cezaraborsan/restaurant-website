@@ -7,7 +7,7 @@ function Footer() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-logo-container">
-            <a className="footer-logo">MIYABI HOUSE</a>
+            <p className="footer-logo">MIYABI HOUSE</p>
             <p className="footer-paragraph">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Deserunt, labore? Lorem ipsum dolor sit amet consectetur
@@ -36,7 +36,7 @@ function Footer() {
                 <br />
                 Saturday: 10:00 AM - 11:00 PM
                 <br />
-                Sunday: 11 AM- 10 PM
+                Sunday: 11:00 AM- 10:00 PM
               </p>
             </div>
             <div className="footer-section">

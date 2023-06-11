@@ -53,9 +53,11 @@ function ContactPage() {
             color="#f3ede1"
             hoverBgColor="#f3ede1"
             hoverColor="#e56e0c"
+            path="/menu"
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

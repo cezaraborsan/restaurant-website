@@ -13,13 +13,16 @@ export default function Hero() {
           Exercitationem nobis deleniti nam possimus reprehenderit a nostrum
           fuga, illo molestiae accusamus?
         </p>
+
         <MainButton
           label="Order Now"
           bgColor="#e56e0c"
           color="#f3ede1"
           hoverBgColor="#f3ede1"
           hoverColor="#e56e0c"
+          path="/contact"
         />
+
         <img className="hero-image" src="../hero-ramen-img.png" alt="ramen" />
       </section>
     </>

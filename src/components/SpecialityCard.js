@@ -14,6 +14,7 @@ function SpecialityCard(props) {
         color="#e56e0c"
         hoverBgColor="#e56e0c"
         hoverColor="#f3ede1"
+        path="/contact"
       />
     </div>
   );
