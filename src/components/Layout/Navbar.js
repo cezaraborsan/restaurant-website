@@ -52,7 +52,7 @@ function Navbar() {
             Contact
           </Link>
         </div>
-        {/* Render the HamburgerMenu component for mobile screen sizes */}
+
         {isMobileScreen && (
           <div className="hamburger-icon" onClick={toggleMenu}>
             <div className={`bar ${isMenuOpen ? "open" : ""}`}></div>
@@ -62,7 +62,6 @@ function Navbar() {
         )}
       </nav>
 
-      {/* Render the HamburgerMenu component for mobile screen sizes */}
       {isMobileScreen && (
         <>
           <HamburgerMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />

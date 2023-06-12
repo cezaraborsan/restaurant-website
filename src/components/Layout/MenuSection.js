@@ -1,9 +1,18 @@
 import React from "react";
 import MainButton from "../MainButton";
+import IntersectionObserver from "../IntersectionObserver";
 
 function MenuSection() {
+  const handleIntersection = (target) => {
+    target.classList.add("visible");
+  };
+
+  const targetRef = IntersectionObserver(handleIntersection, {
+    threshold: 0.3,
+  });
+
   return (
-    <section className="menu-section">
+    <section className="menu-section intersectionObserver" ref={targetRef}>
       <div className="menu-content">
         <h2 className="menu-title">Japanese Cuisine</h2>
         <p className="menu-paragraph">

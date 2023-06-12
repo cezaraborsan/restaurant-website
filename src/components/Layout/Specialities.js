@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import SpecialityCard from "../SpecialityCard";
+import IntersectionObserver from "../IntersectionObserver";
 
 function Specialities() {
   const containerRef = useRef(null);
@@ -24,9 +25,20 @@ function Specialities() {
     container.scrollLeft += scrollAmount;
     setDragStartX(e.clientX);
   };
+
+  const handleIntersection = (target) => {
+    target.classList.add("visible");
+  };
+
+  const targetRef = IntersectionObserver(handleIntersection, {
+    threshold: 0.3,
+  });
   return (
     <>
-      <section className="specialities-section">
+      <section
+        className="specialities-section intersectionObserver"
+        ref={targetRef}
+      >
         <h2>Our Specialities</h2>
         <div
           className="cards-container"

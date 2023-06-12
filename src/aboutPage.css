@@ -1,4 +1,4 @@
-/* About Page  styles */
+/* ************************ AboutPage Component Styles ************************* */
 
 .about-page {
   background-image: url("../public/noodles-bg.svg");
@@ -45,7 +45,7 @@
   padding-bottom: 4rem;
 }
 
-/* Contact Page styles */
+/* ************************ ContactPage Component Styles ************************* */
 
 .contact-page {
   background-image: url("../public/contact-bg-2.svg"),

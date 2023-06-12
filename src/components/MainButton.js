@@ -24,7 +24,7 @@ function MainButton(props) {
   };
 
   const handleClick = () => {
-    navigate.push(path); // Navigate to the specified path
+    navigate(path); // Navigate to the specified path
     window.scrollTo(0, 0); // Scroll the page to the top
   };
 

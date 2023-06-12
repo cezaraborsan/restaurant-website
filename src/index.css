@@ -78,6 +78,55 @@ h4 {
   flex: 1;
 }
 
+/* ************************ Loader Component Styles ************************* */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e9dac6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease;
+  z-index: 10000;
+}
+
+.loader-text {
+  font-family: "HIROMISAKE", sans-serif;
+  color: #333f72;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 10px solid #333f72;
+  padding: 4rem;
+  margin: 1.5rem;
+  animation: fade 3s alternate;
+  background-image: url("../public/bg-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.loader-text.loaded {
+  opacity: 1;
+}
+
+/* ************************ IntersectionObserver Component Styles ************************* */
+.intersectionObserver {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.intersectionObserver.visible {
+  opacity: 1;
+}
+
+/* ************************ Navbar Component Styles ************************* */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -137,7 +186,7 @@ nav {
   display: none;
 }
 
-/* HERO SECTION STYLES */
+/* ************************ Hero Component Styles ************************* */
 
 .hero-section {
   display: flex;
@@ -175,7 +224,7 @@ nav {
   height: auto;
 }
 
-/* Our Menu Section */
+/* ************************ MenuSection Component Styles ************************* */
 
 .menu-section {
   padding-top: 0.5rem;
@@ -199,7 +248,7 @@ nav {
   padding: 2.5rem 0;
 }
 
-/*  Specialites section */
+/* ************************ Specialites Component Styles ************************* */
 
 .specialities-section,
 .reviews-section,
@@ -209,7 +258,6 @@ nav {
   margin: 4rem auto 6rem;
 }
 
-/* SpecialityCard */
 .cards-container {
   display: flex;
   justify-content: space-between;
@@ -251,7 +299,7 @@ nav {
   background-color: rgba(51, 63, 114, 0.6);
 }
 
-/* Reviews */
+/* ************************ Reviews Component Styles ************************* */
 
 .reviews-section {
   margin-top: 3rem;
@@ -277,7 +325,7 @@ nav {
   width: 300px;
 }
 
-/* ************************ FOOTER ************************* */
+/* ************************ Footer Component Styles ************************* */
 
 .footer {
   background-color: #f3ede1;
@@ -348,6 +396,8 @@ nav {
   margin: 0;
 }
 
+/* ************************ CopyRights Component Styles ************************* */
+
 .footer-copy-rights {
   text-align: center;
   background-color: #333f72;
@@ -357,7 +407,7 @@ nav {
   font-size: 14px;
 }
 
-/* Media query for mobile screen sizes */
+/* ************************ Media query for mobile screen sizes ************************* */
 @media screen and (max-width: 900px) {
   /* Navbar */
 

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import ReviewCard from "../ReviewCard";
+import IntersectionObserver from "../IntersectionObserver";
 
 function Reviews() {
   const containerRef = useRef(null);
@@ -25,9 +26,20 @@ function Reviews() {
     setDragStartX(e.clientX);
   };
 
+  const handleIntersection = (target) => {
+    target.classList.add("visible");
+  };
+
+  const targetRef = IntersectionObserver(handleIntersection, {
+    threshold: 0.3,
+  });
+
   return (
     <>
-      <section className="reviews-section">
+      <section
+        className="reviews-section intersectionObserver"
+        ref={targetRef}
+      >
         <h2>Customer Experience</h2>
         <div
           className="cards-container"

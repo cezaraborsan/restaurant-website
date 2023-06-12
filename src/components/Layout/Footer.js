@@ -1,10 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import IntersectionObserver from "../IntersectionObserver";
 
 function Footer() {
+  const handleIntersection = (target) => {
+    target.classList.add("visible");
+  };
+
+  const targetRef = IntersectionObserver(handleIntersection, {
+    threshold: 0.3,
+  });
   return (
     <>
-      <footer className="footer">
+      <footer className="footer intersectionObserver" ref={targetRef}>
         <div className="footer-content">
           <div className="footer-logo-container">
             <p className="footer-logo">MIYABI HOUSE</p>
