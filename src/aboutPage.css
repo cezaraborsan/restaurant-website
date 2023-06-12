@@ -36,43 +36,13 @@
   margin: 0 auto;
 }
 
-.about-subtitle,
-.contact-subtitle {
-  position: relative;
-  width: fit-content;
-}
-
-.about-subtitle::before,
-.about-subtitle::after,
-.contact-subtitle::before,
-.contact-subtitle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  background-color: #e56e0c;
-  border-radius: 50%;
-}
-
-.about-subtitle::before,
-.contact-subtitle::before {
-  left: -30px;
-}
-
-.about-subtitle::after,
-.contact-subtitle::after {
-  right: -30px;
-}
-
 .about-paragraph {
   max-width: 700px;
   margin: 0 auto;
 }
 
 .japanese-cuisine-section p {
-  padding-bottom: 1.5rem;
+  padding-bottom: 4rem;
 }
 
 /* Contact Page styles */
@@ -83,6 +53,7 @@
   background-position: bottom right, 5%;
   background-repeat: no-repeat;
   background-size: 350px, 120px;
+  margin-top: 1.5rem;
 }
 
 .contact-content {
@@ -110,6 +81,31 @@
 .contact-page .main-button-container {
   align-self: center;
   margin: 2rem 0 5rem;
+}
+
+.contact-subtitle {
+  position: relative;
+  width: fit-content;
+}
+
+.contact-subtitle::before,
+.contact-subtitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #e56e0c;
+  border-radius: 50%;
+}
+
+.contact-subtitle::before {
+  left: -20px;
+}
+
+.contact-subtitle::after {
+  right: -20px;
 }
 
 @media screen and (max-width: 900px) {

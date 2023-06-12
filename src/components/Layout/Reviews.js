@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import ReviewCard from "../ReviewCard";
-import Marquee from "../Marquee";
 
 function Reviews() {
   const containerRef = useRef(null);
@@ -63,7 +62,6 @@ function Reviews() {
           />
         </div>
       </section>
-      <Marquee label="今すぐ注文" />
     </>
   );
 }

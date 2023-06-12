@@ -6,7 +6,10 @@ function SpecialityCard(props) {
 
   return (
     <div className="card">
-      <img src={image} alt={title} className="card-image" />
+      <div className="card-image-container">
+        <img src={image} alt={title} className="card-image" />
+      </div>
+
       <h2 className="card-title">{title}</h2>
       <MainButton
         label="Order Now"

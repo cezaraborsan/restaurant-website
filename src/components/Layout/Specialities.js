@@ -1,7 +1,5 @@
 import React, { useRef, useState } from "react";
-
 import SpecialityCard from "../SpecialityCard";
-import Marquee from "../Marquee";
 
 function Specialities() {
   const containerRef = useRef(null);
@@ -28,7 +26,6 @@ function Specialities() {
   };
   return (
     <>
-      <Marquee label="最高の日本食" />
       <section className="specialities-section">
         <h2>Our Specialities</h2>
         <div

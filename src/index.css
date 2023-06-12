@@ -66,7 +66,7 @@ h4 {
 .container {
   min-width: 375px;
   width: 100%;
-  max-width: 2500px;
+  max-width: 2200px;
   margin: 0 auto;
   overflow-x: hidden;
   display: flex;
@@ -144,11 +144,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.2rem;
+  gap: 3rem;
   text-align: center;
   margin: 3rem auto;
   background-image: url("../public/bg-svg-2.svg"), url("../public/bg-svg.svg");
-  background-position: top left, right;
+  background-position: top left, right, bottom center;
   background-repeat: no-repeat;
   background-size: 400px, 400px;
 }
@@ -179,6 +179,10 @@ nav {
 
 .menu-section {
   padding-top: 0.5rem;
+  background-image: url("../public/contact-bg-3.svg");
+  background-position: 15% center;
+  background-repeat: no-repeat;
+  background-size: 70px;
 }
 
 .menu-title {
@@ -186,12 +190,13 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 150px;
-  padding: 2.5rem;
+  padding: 2.8rem;
 }
 
 .menu-paragraph {
   max-width: 600px;
-  margin: 1rem auto 2rem auto;
+  margin: 0 auto;
+  padding: 2.5rem 0;
 }
 
 /*  Specialites section */
@@ -202,14 +207,6 @@ nav {
   text-align: center;
   max-width: 1280px;
   margin: 4rem auto 6rem;
-}
-
-marquee {
-  display: inline-block;
-  white-space: nowrap;
-  padding: 0 10px; /* Adjust padding as needed */
-  font-size: 5.3rem;
-  color: #e9dac6;
 }
 
 /* SpecialityCard */
@@ -225,9 +222,16 @@ marquee {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
   border: 1px solid #333f72;
   border-radius: 48px 0;
   padding: 1.5rem;
+}
+
+.card-image {
+  width: 230px;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -277,7 +281,7 @@ marquee {
 
 .footer {
   background-color: #f3ede1;
-  padding: 3rem;
+  padding: 2rem 3rem;
   color: #333f72;
   border-top: 1px solid #e9dac6;
   position: relative;
@@ -285,7 +289,7 @@ marquee {
 
 .footer-content {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .footer-logo-container {
@@ -413,8 +417,6 @@ marquee {
     transform: translateY(0%);
   }
 
-
-
   .menu-link {
     display: block;
     margin-bottom: 1.2rem;
@@ -490,15 +492,15 @@ marquee {
   }
 
   h2 {
-    font-size: 2.2rem;
-  }
-
-  h3 {
     font-size: 2rem;
   }
 
+  h3 {
+    font-size: 1.8rem;
+  }
+
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
