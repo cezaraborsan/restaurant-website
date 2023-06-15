@@ -97,9 +97,9 @@ h4 {
 .loader-text {
   font-family: "HIROMISAKE", sans-serif;
   color: #333f72;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   border: 10px solid #333f72;
   padding: 4rem;
   margin: 1.5rem;
@@ -511,6 +511,7 @@ nav {
 
   h2 {
     font-size: 2.5rem;
+    padding-inline: 1.5rem;
   }
 
   .cards-container {

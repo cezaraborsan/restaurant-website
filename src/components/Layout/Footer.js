@@ -44,7 +44,7 @@ function Footer() {
                 <br />
                 Saturday: 10:00 AM - 11:00 PM
                 <br />
-                Sunday: 11:00 AM- 10:00 PM
+                Sunday: 11:00 AM - 10:00 PM
               </p>
             </div>
             <div className="footer-section">
