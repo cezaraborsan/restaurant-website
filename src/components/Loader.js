@@ -23,9 +23,7 @@ function Loader() {
 
   return (
     <div id="loader" className="loader">
-      <div className={`loader-text ${loaded ? "loaded" : ""}`}>
-        MIYABI HOUSE <br /> みやびハウス
-      </div>
+      <div className={`loader-text ${loaded ? "loaded" : ""}`}></div>
     </div>
   );
 }

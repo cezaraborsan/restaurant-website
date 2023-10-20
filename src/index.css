@@ -95,13 +95,9 @@ h4 {
 }
 
 .loader-text {
-  font-family: "HIROMISAKE", sans-serif;
-  color: #333f72;
-  font-size: 1.3rem;
-  font-weight: bold;
   letter-spacing: 1px;
-  border: 10px solid #333f72;
-  padding: 4rem;
+  border: 8px solid #333f72;
+  padding: 6rem;
   margin: 1.5rem;
   animation: fade 3s alternate;
   background-image: url("../public/bg-menu.svg");
